@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "strategy": "baseline",
+    "runs": 576,
+    "successes": 528,
+    "direct": 264,
+    "relayed": 264,
+    "failed": 48,
+    "direct_rate": 45.833333333333336,
+    "success_rate": 91.66666666666667,
+    "relay_traffic_pct": 37.0916622377289,
+    "avg_connect_ms": 1625.9305555555557,
+    "avg_direct_ms": 1374.9507575757575,
+    "avg_relay_ms": 2172.534090909091,
+    "avg_relay_rtt_ms": 44.45075757575758,
+    "theory_matches": 308,
+    "theory_total": 576,
+    "theory_match_rate": 53.47222222222222,
+    "prediction_hits": 0
+  },
+  "full": {
+    "strategy": "full",
+    "runs": 576,
+    "successes": 576,
+    "direct": 476,
+    "relayed": 100,
+    "failed": 0,
+    "direct_rate": 82.63888888888889,
+    "success_rate": 100,
+    "relay_traffic_pct": 12.804282463617067,
+    "avg_connect_ms": 2680.1006944444443,
+    "avg_direct_ms": 1561.8235294117646,
+    "avg_relay_ms": 8003.1,
+    "avg_relay_rtt_ms": 16.08,
+    "theory_matches": 576,
+    "theory_total": 576,
+    "theory_match_rate": 100,
+    "prediction_hits": 79
+  }
+}

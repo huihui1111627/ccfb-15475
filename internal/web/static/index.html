@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NAT 穿透仿真面板 · natlab</title>
+<style>
+  :root{
+    --bg:#0e1117; --panel:#161b22; --panel2:#1c2330; --line:#2a3240;
+    --txt:#e6edf3; --muted:#8b97a7; --accent:#4f9cf9; --good:#3fb950;
+    --warn:#d29922; --bad:#f85149; --relay:#a371f7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+  header{padding:18px 26px;border-bottom:1px solid var(--line);
+    display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;background:var(--panel)}
+  header h1{font-size:18px;margin:0}
+  header .sub{color:var(--muted);font-size:12px}
+  .tabs{display:flex;gap:6px;padding:12px 26px 0;background:var(--panel);
+    border-bottom:1px solid var(--line)}
+  .tabs button{background:transparent;color:var(--muted);border:1px solid transparent;
+    border-bottom:none;padding:9px 16px;border-radius:8px 8px 0 0;cursor:pointer;font-size:13px}
+  .tabs button.active{background:var(--bg);color:var(--txt);border-color:var(--line)}
+  main{padding:22px 26px}
+  .view{display:none}.view.active{display:block}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:22px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .card .k{color:var(--muted);font-size:12px;margin-bottom:6px}
+  .card .v{font-size:24px;font-weight:650}
+  .card .v small{font-size:13px;color:var(--muted);font-weight:400}
+  .grid-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+  table{border-collapse:collapse;font-size:12px}
+  th,td{padding:7px 9px;text-align:center;border:1px solid var(--line);white-space:nowrap}
+  th:first-child,td:first-child{position:sticky;left:0;background:var(--panel2);z-index:2;font-weight:600}
+  thead th{position:sticky;top:0;background:var(--panel2);z-index:3}
+  thead th:first-child{z-index:4}
+  .cell{cursor:pointer;min-width:64px;color:#fff;font-weight:600}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin:12px 2px;color:var(--muted);font-size:12px}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+  .timeline{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:14px;max-height:70vh;overflow:auto;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+  .tl-row{display:grid;grid-template-columns:74px 130px 150px 1fr;gap:10px;padding:3px 4px;border-bottom:1px solid #20262f}
+  .tl-row:hover{background:var(--panel2)}
+  .t{color:var(--muted)} .kind{font-weight:600}
+  .k-ice{color:var(--accent)} .k-connected,.k-success{color:var(--good)}
+  .k-relay{color:var(--relay)} .k-nat-drop,.k-drop,.k-timeout,.k-fail{color:var(--bad)}
+  .k-nat-map{color:var(--warn)} .k-disc{color:#56d4dd} .k-signal{color:#d2a8ff}
+  .relay-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+  .relay{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .relay h3{margin:0 0 10px;font-size:13px}
+  .bar{height:8px;background:var(--panel2);border-radius:5px;overflow:hidden;margin-top:8px}
+  .bar>span{display:block;height:100%;background:linear-gradient(90deg,var(--good),var(--warn),var(--bad))}
+  .muted{color:var(--muted)} .pill{padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+  .pill.good{background:rgba(63,185,80,.15);color:var(--good)}
+  .pill.relay{background:rgba(163,113,247,.15);color:var(--relay)}
+  .pill.bad{background:rgba(248,81,73,.15);color:var(--bad)}
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .panel h3{margin:0 0 12px;font-size:14px}
+  .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #20262f;font-size:13px}
+  .row:last-child{border-bottom:none}
+  .row span:last-child{font-weight:600}
+  select{background:var(--panel2);color:var(--txt);border:1px solid var(--line);
+    border-radius:7px;padding:6px 10px}
+  .controls{display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+  .tooltip{position:fixed;background:#000d;border:1px solid var(--line);padding:8px 11px;border-radius:8px;
+    font-size:12px;pointer-events:none;display:none;z-index:50;max-width:300px}
+</style>
+</head>
+<body>
+<header>
+  <h1>NAT 穿透仿真面板</h1>
+  <span class="sub">离散事件网络仿真 · 终端 / NAT / 探测 / 信令 / 中继全栈建模</span>
+  <span id="status" class="muted"></span>
+</header>
+
+<div class="tabs">
+  <button data-view="matrix" class="active">① NAT 组合结果矩阵</button>
+  <button data-view="trace">② 单次连接探测时间线</button>
+  <button data-view="relay">③ 中继负载与选择</button>
+  <button data-view="compare">完整方案 vs 简单打洞</button>
+</div>
+
+<main>
+  <!-- MATRIX -->
+  <section id="matrix" class="view active">
+    <div class="controls">
+      <label>策略 <select id="stratSel">
+        <option value="full">完整方案（ICE+预测+中继优选）</option>
+        <option value="baseline">简单打洞基线</option>
+      </select></label>
+      <span class="muted">单元格颜色=直连率；点击查看该组合的理论判定与实测</span>
+    </div>
+    <div class="cards" id="matrixCards"></div>
+    <div class="legend">
+      <span><i style="background:#1f6f3f"></i>直连 ≥80%</span>
+      <span><i style="background:#7a8f2c"></i>直连 40–80%</span>
+      <span><i style="background:#a15a23"></i>直连 1–40%</span>
+      <span><i style="background:#8a2f38"></i>全部失败/中继</span>
+    </div>
+    <div class="grid-wrap"><table id="matrixTable"></table></div>
+  </section>
+
+  <!-- TRACE -->
+  <section id="trace" class="view">
+    <div class="controls">
+      <label>记录 <select id="traceSel">
+        <option value="trace.json">完整方案 · 双对称递增</option>
+        <option value="trace-baseline.json">简单打洞 · 同组合对比</option>
+        <option value="mobility.json">网络切换（Wi-Fi→蜂窝）重协商</option>
+      </select></label>
+    </div>
+    <div class="cards" id="traceCards"></div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- RELAY -->
+  <section id="relay" class="view">
+    <p class="muted">中继按地区(4)×运营商(3)部署，颜色条表示容量占用；完整方案依据 RTT/地域/运营商/负载加权选择，简单打洞盲选第一个。</p>
+    <div class="cards" id="relayCards"></div>
+    <div class="relay-grid" id="relayGrid"></div>
+  </section>
+
+  <!-- COMPARE -->
+  <section id="compare" class="view">
+    <div class="compare">
+      <div class="panel"><h3>完整方案</h3><div id="fullStats"></div></div>
+      <div class="panel"><h3>简单打洞基线</h3><div id="baseStats"></div></div>
+    </div>
+    <p class="muted" style="margin-top:16px">理论对照率 = 仿真结果与独立的分析判定（truth 包）一致的比例。基线缺乏端口预测、TCP 回退、中继优选与 ICE 重协商，故在对称/嵌套/协议屏蔽场景显著落后。</p>
+  </section>
+</main>
+
+<div class="tooltip" id="tip"></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const tip=$('#tip');
+async function getJSON(f){const r=await fetch('data/'+f);if(!r.ok)throw new Error(f);return r.json();}
+function pct(x){return (x==null?0:x).toFixed(1)+'%';}
+function ms(x){return x==null?'–':Math.round(x)+' ms';}
+function colorFor(rate){
+  if(rate>=80)return '#1f6f3f'; if(rate>=40)return '#7a8f2c';
+  if(rate>0)return '#a15a23'; return '#8a2f38';
+}
+function kindClass(k){return 'k-'+(k||'').replace(/[^a-z-]/gi,'');}
+
+async function initMatrix(){
+  const agg=await getJSON('aggregate.json');
+  const strat=$('#stratSel').value;
+  const cells=await getJSON('matrix-'+strat+'.json');
+  const a=agg[strat];
+  $('#matrixCards').innerHTML=[
+    ['运行次数',a.runs],['成功率',pct(a.success_rate)],['直连率',pct(a.direct_rate)],
+    ['中继连接',a.relayed],['完全失败',a.failed],['理论对照率',pct(a.theory_match_rate)],
+    ['平均建连',ms(a.avg_connect_ms)],['中继流量占比',pct(a.relay_traffic_pct)],
+  ].map(([k,v])=>`<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
+
+  const ids=[...new Set(cells.map(c=>c.left_id))];
+  let html='<thead><tr><th>左 ＼ 右</th>'+ids.map(i=>`<th>${i}</th>`).join('')+'</tr></thead><tbody>';
+  for(const l of ids){
+    html+=`<tr><td>${l}</td>`;
+    for(const r of ids){
+      const c=cells.find(x=>x.left_id===l&&x.right_id===r);
+      if(!c){html+='<td class="muted">–</td>';continue;}
+      const tag=c.theory.startsWith('relay')?'<span class="pill relay">中继</span>':
+                c.theory.startsWith('direct-tcp')?'<span class="pill bad">TCP</span>':
+                '<span class="pill good">直连</span>';
+      html+=`<td class="cell" style="background:${colorFor(c.direct_rate)}"
+        data-tip="${l} → ${r}\n理论:${c.theory} (可行直连:${c.direct_feasible?'是':'否'})\n直连率:${pct(c.direct_rate)} 中继:${pct(c.relay_rate)} 失败:${pct(c.fail_rate)}\n平均建连:${ms(c.avg_connect_ms)} 对照:${pct(c.theory_match_rate)}">
+        ${Math.round(c.direct_rate)}${tag}</td>`;
+    }
+    html+='</tr>';
+  }
+  $('#matrixTable').innerHTML=html+'</tbody>';
+  document.querySelectorAll('.cell').forEach(el=>el.onmousemove=e=>{
+    tip.style.display='block';tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px';
+    tip.innerText=el.dataset.tip;});
+  document.querySelectorAll('.cell').forEach(el=>el.onmouseleave=()=>tip.style.display='none');
+}
+$('#stratSel').onchange=initMatrix;
+
+async function initTrace(){
+  const f=$('#traceSel').value;
+  const d=await getJSON(f);
+  const lr=d.left_report||{}, rr=d.right_report||{};
+  const ev=(lr.ConnectTime?lr.ConnectTime.Milliseconds??lr.connect_ms:null);
+  $('#traceCards').innerHTML=[
+    ['建连方式',(lr.via||rr.via||'–')],
+    ['协议',(lr.protocol||rr.protocol||'–')],
+    ['建连耗时',ms((lr.connect_ms??rr.connect_ms))],
+    ['预测命中',(lr.prediction_hits||0)+(rr.prediction_hits||0)],
+    ['失败检查',(lr.failed_checks||0)+(rr.failed_checks||0)],
+    ['ICE 重启',(lr.restarts||0)+(rr.restarts||0)],
+  ].map(([k,v])=>`<div class="card"><div class="k">${k}</div><div class="v" style="font-size:18px">${v}</div></div>`).join('');
+  const events=d.events||[];
+  $('#timeline').innerHTML=events.map(e=>
+    `<div class="tl-row">
+      <span class="t">${(e.t_ms.Milliseconds??e.t_ms).toString().padStart(6)}ms</span>
+      <span class="kind ${kindClass(e.kind)}">${e.kind}</span>
+      <span class="muted">${e.node||''}</span>
+      <span>${e.detail||''}</span></div>`).join('');
+}
+$('#traceSel').onchange=initTrace;
+
+async function initRelay(){
+  // relay fleet snapshot comes from the full trace run
+  const d=await getJSON('trace.json');
+  const fleet=d.relay_fleet||[];
+  const totals=fleet.reduce((a,r)=>{a.load+=r.load_pct;a.bytes+=r.bytes;a.active+=r.active;return a;},{load:0,bytes:0,active:0});
+  $('#relayCards').innerHTML=[
+    ['中继数量',fleet.length],['活跃会话',totals.active],
+    ['平均负载',pct(totals.load/fleet.length/100*100)],['总转发字节',totals.bytes.toLocaleString()],
+  ].map(([k,v])=>`<div class="card"><div class="k">${k}</div><div class="v" style="font-size:20px">${v}</div></div>`).join('');
+  $('#relayGrid').innerHTML=fleet.map(r=>`
+    <div class="relay">
+      <h3>${r.id}</h3>
+      <div class="muted">${r.region} · ${r.isp}</div>
+      <div class="row" style="border:none;padding:4px 0"><span>负载</span><span>${r.load_pct}% (${r.active} 会话)</span></div>
+      <div class="bar"><span style="width:${Math.min(100,r.load_pct)}%"></span></div>
+      <div class="muted" style="margin-top:8px;font-size:12px">转发 ${r.bytes.toLocaleString()} 字节</div>
+    </div>`).join('');
+}
+
+function statsPanel(a){
+  if(!a)return '<p class="muted">无数据</p>';
+  const rows=[
+    ['总运行',a.runs],['成功率',pct(a.success_rate)],['直连率',pct(a.direct_rate)],
+    ['中继连接数',a.relayed],['完全失败',a.failed],
+    ['平均建连',ms(a.avg_connect_ms)],['平均直连建连',ms(a.avg_direct_ms)],
+    ['平均中继建连',ms(a.avg_relay_ms)],['中继探测 RTT',ms(a.avg_relay_rtt_ms)],
+    ['中继流量占比',pct(a.relay_traffic_pct)],['端口预测命中',a.prediction_hits],
+    ['理论对照率',pct(a.theory_match_rate)],
+  ];
+  return rows.map(([k,v])=>`<div class="row"><span>${k}</span><span>${v}</span></div>`).join('');
+}
+async function initCompare(){
+  const agg=await getJSON('aggregate.json');
+  $('#fullStats').innerHTML=statsPanel(agg.full);
+  $('#baseStats').innerHTML=statsPanel(agg.baseline);
+}
+
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');$('#'+b.dataset.view).classList.add('active');
+  if(b.dataset.view==='trace')initTrace();
+  if(b.dataset.view==='relay')initRelay();
+  if(b.dataset.view==='compare')initCompare();
+});
+(async function boot(){
+  try{
+    await initMatrix();$('#status').textContent='数据已加载 · '+new Date().toLocaleTimeString();
+  }catch(e){$('#status').textContent='数据加载失败，请先运行 natlab 生成 webdata：'+e.message;}
+})();
+</script>
+</body>
+</html>

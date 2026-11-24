@@ -1,0 +1,2018 @@
+[
+  {
+    "left_id": "addr-dependent",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1470.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1415.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1324.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7879.25,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "addr-dependent",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1418.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1415.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1474,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1475.5,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1418.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1418.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1418.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1420.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1322,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7792.25,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1650.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "fullcone",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1650,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1467.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1518.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1526.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1464.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1525,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7927,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1786,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-cone-sym",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1780,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1465.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1466,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1520.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1527.5,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1465.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1465.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1465.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1470.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1527.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7929.25,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1780,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "nested-two-cone",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1780,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1470.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1415.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1325.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7878,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "portrestricted",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1470.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1415.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1325.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7878,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "restricted",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1470.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1471.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1415.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1325.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7878,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "short-timeout",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1466.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1476,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1414.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1417.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1322.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7878,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1642.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1641.75,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1333,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1332.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1384,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1392,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1333.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1333.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1333.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1456.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1324.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7793.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1644.25,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "symmetric-inc",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1646.25,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "addr-dependent",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7880.75,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "fullcone",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7878.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7925.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "nested-two-cone",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7926.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "portrestricted",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7876.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "restricted",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7876.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "short-timeout",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7876.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "symmetric",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7879,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "symmetric-inc",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7878.75,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 7879.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "tcp-blocked",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 8109.5,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "symmetric-rand",
+    "right_id": "udp-blocked",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 8117.25,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1978,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 2030.75,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 2031.25,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1979.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp-predict",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1908.5,
+    "verdicts": [
+      "direct-udp-predict"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 8381.75,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "tcp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-udp",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 2228.75,
+    "verdicts": [
+      "direct-udp"
+    ]
+  },
+  {
+    "left_id": "tcp-blocked",
+    "right_id": "udp-blocked",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 8688,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "addr-dependent",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "fullcone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1978,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "nested-cone-sym",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 2031.25,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "nested-two-cone",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 2031.25,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "portrestricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "restricted",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "short-timeout",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "symmetric",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1977,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "symmetric-inc",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 1914,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "symmetric-rand",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 8381.75,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "tcp-blocked",
+    "direct_rate": 0,
+    "relay_rate": 100,
+    "fail_rate": 0,
+    "theory": "relay-only",
+    "direct_feasible": false,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 8688,
+    "verdicts": [
+      "relay-only"
+    ]
+  },
+  {
+    "left_id": "udp-blocked",
+    "right_id": "udp-blocked",
+    "direct_rate": 100,
+    "relay_rate": 0,
+    "fail_rate": 0,
+    "theory": "direct-tcp-simopen",
+    "direct_feasible": true,
+    "theory_match_rate": 100,
+    "avg_connect_ms": 2228.75,
+    "verdicts": [
+      "direct-tcp-simopen"
+    ]
+  }
+]
